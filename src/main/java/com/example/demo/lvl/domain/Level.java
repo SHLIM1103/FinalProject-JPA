@@ -11,7 +11,9 @@ import javax.persistence.Table;
 
 import com.example.demo.usr.domain.User;
 
-@Entity @Table(name="levels")
+import lombok.Getter;
+
+@Entity @Getter @Table(name="levels")
 public class Level {
 	@Id @Column(name="level") private int level;
 	

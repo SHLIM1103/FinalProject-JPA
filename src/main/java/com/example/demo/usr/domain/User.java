@@ -22,6 +22,7 @@ public class User {
 	@Id @GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "usr_no") private int usrNo;
 	@Column(name = "usr_name") private String usrName;
+	@Column(name = "usr_nickname") private String usrNickname;
 	@Column(name = "usr_email") private String usrEmail;
 	@Column(name = "usr_pwd") private String usrPwd;
  	@Column(name = "usr_ages") private String usrAges;

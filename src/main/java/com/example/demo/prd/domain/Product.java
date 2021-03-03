@@ -16,7 +16,9 @@ import javax.persistence.Table;
 import com.example.demo.ctg.domain.Category;
 import com.example.demo.ord.domain.Order;
 
-@Entity @Table(name="products")
+import lombok.Getter;
+
+@Entity @Getter @Table(name="products")
 public class Product {
 	@Id @GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="prd_no") private int prdNo;

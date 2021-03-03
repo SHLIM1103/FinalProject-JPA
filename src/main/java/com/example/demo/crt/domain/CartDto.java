@@ -1,8 +1,11 @@
 package com.example.demo.crt.domain;
 
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
+
 import lombok.Data;
 
-@Data
+@Component @Data @Lazy
 public class CartDto {
 	   private int cartNo;
 	   private int usrNo, prdNo, carAmount;

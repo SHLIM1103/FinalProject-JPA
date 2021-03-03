@@ -13,7 +13,9 @@ import javax.persistence.Table;
 
 import com.example.demo.prd.domain.Product;
 
-@Entity @Table(name="categories")
+import lombok.Getter;
+
+@Entity @Getter @Table(name="categories")
 public class Category {
 	@Id @GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name="ctg_no") private int ctgNo;

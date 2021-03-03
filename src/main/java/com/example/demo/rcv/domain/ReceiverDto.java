@@ -1,9 +1,12 @@
 package com.example.demo.rcv.domain;
 
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Component;
+
 import lombok.Data;
 
-@Data
+@Component @Data @Lazy
 public class ReceiverDto {
-	private int rcvNo, ordNo;
+	private int rcvNo;
     private String usrEmail, rcvName, rcvPhone, rcvAddr;
 }

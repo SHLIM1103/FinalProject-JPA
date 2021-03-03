@@ -7,6 +7,9 @@ import lombok.Data;
 
 @Component @Data @Lazy
 public class BoardDto {
-	private int brdNum, rank;
-	private String brdTitle, brdContent, writtenDate;
+	private int brdNo, brdKind;
+	private String brdTitle, brdContent, brdWrtDate, brdRank, brdImage, brdCount, brdLike, brdPwd;
+	
+	private int usrNo;
+	private String usrNickname;
 }
